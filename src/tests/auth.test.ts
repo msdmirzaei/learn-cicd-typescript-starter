@@ -26,7 +26,7 @@ describe("getAPIKey", () => {
 
   test("should return the API key if the authorization header is valid", () => {
     const headers = {
-      authorization: "ApiKey alid-api-key",
+      authorization: "ApiKey valid-api-key",
     };
     const result = getAPIKey(headers);
     expect(result).toBe("valid-api-key");
